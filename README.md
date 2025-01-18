@@ -35,6 +35,8 @@ The `daily-scripture-scraper` repository contains a Python script, `daily script
 Enter year: 2025
 Downloaded 365 sites in 123.45 seconds
 ```
+## Usage
+I feed the .txt files into KWGT and display the one for each day on my screen.
 
 ## License
 
