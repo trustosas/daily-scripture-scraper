@@ -45,5 +45,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Author
 
 - GitHub: [trustosas](https://github.com/trustosas)
-
-Feel free to contribute to this project by submitting issues or pull requests. Enjoy scraping daily scriptures!
