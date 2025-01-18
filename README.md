@@ -1,6 +1,6 @@
 # Daily Scripture Scraper
 
-A script that scrapes daily scriptures from the JW website for a specified year and saves them as text files.
+A script that scrapes daily scriptures from the JW website (wol.jw.org) for a specified year and saves them as text files.
 
 ## Description
 
