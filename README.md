@@ -36,9 +36,7 @@ Enter year: 2025
 Downloaded 365 sites in 123.45 seconds
 ```
 ## Use case
-I feed the .txt files into KWGT and display the one for each day on my screen. The limit is your creativity. This is what it looks like.
-
-![Screenshot_20250218-133358](https://github.com/user-attachments/assets/c030dc86-6a75-44d7-a8ce-ef6264a5da18)
+I feed the .txt files into KWGT and display the one for each day on my screen. The limit is your creativity. [This is what it looks like](https://github.com/user-attachments/assets/c030dc86-6a75-44d7-a8ce-ef6264a5da18).
 
 ## License
 
