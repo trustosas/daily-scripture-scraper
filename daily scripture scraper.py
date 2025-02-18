@@ -19,21 +19,21 @@ for dt in daterange(start_dt, end_dt):
     datelist.append(dt.strftime("%Y/%m/%d"))
 
 def addjw(text):
-	return """https://wol.jw.org/en/wol/h/r1/lp-e/""" + text
+    return """https://wol.jw.org/en/wol/h/r1/lp-e/""" + text
 
 linklist = list(map(addjw, datelist))
 
 def writetofile(html):
-	soup = BeautifulSoup(html, "lxml")
-	text = soup.find("h2")
-	text = unidecode(text.get_text())
-	text = text.replace(",", "").replace('MEMORIAL DATEAfter Sundown', '')
-	text2 = soup.find("p", class_ = "themeScrp")
-	text2 = unidecode(text2.get_text())
-	text2 = text2.replace("--", "-")
-	with open("///storage/emulated/0/Kustom/Daily text/{0} {1}.txt".format(text, year), "w") as f:
-		f.write(text2)
-	return text
+    soup = BeautifulSoup(html, "lxml")
+    text = soup.find("h2")
+    text = unidecode(text.get_text())
+    text = text.replace(",", "").replace('MEMORIAL DATEAfter Sundown', '')
+    text2 = soup.find("p", class_ = "themeScrp")
+    text2 = unidecode(text2.get_text())
+    text2 = text2.replace("--", "-")
+    with open("///storage/emulated/0/Kustom/Daily text/{0} {1}.txt".format(text, year), "w") as f:
+        f.write(text2)
+    return text
 
 async def download_site(session, url):
     async with session.get(url) as response:
@@ -48,10 +48,9 @@ async def download_all_sites(sites):
             tasks.append(task)
         await asyncio.gather(*tasks, return_exceptions=True)
 
-
 if __name__ == "__main__":
     sites = linklist
     start_time = time.time()
-    asyncio.get_event_loop().run_until_complete(download_all_sites(sites))
+    asyncio.run(download_all_sites(sites))
     duration = time.time() - start_time
     print(f"Downloaded {len(sites)} sites in {duration} seconds")
