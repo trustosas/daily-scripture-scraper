@@ -18,7 +18,7 @@ The `daily-scripture-scraper` repository contains a Python script, `daily script
     ```
 3. Install the required dependencies:
     ```sh
-    pip install aiohttp BeautifulSoup4 unidecode
+    pip install aiohttp BeautifulSoup4 unidecode lxml
     ```
 
 ## Usage
